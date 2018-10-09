@@ -1,0 +1,20 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
+1,Grande Recife,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+2,MobiBrasil,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+3,Rodotur,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+4,Cidade Alta,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+5,Itamaraca,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+6,Conorte,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+7,Globo,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+8,Borborema,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+9,Transcol,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+10,Vera Cruz,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+11,Cruzeiro,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+12,Caxangá,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+13,Metropolitana,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,(81) 2138-64,http://www.granderecife.pe.gov.br/web/grande-recife
+14,São Judas Tadeu,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+15,Pedrosa,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+16,Mirim,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+17,Cidade do Recife,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+18,Teste Etra,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
+19,CMC Cooperativa,http://www.granderecife.pe.gov.br/web/grande-recife,America/Recife,es,,http://www.granderecife.pe.gov.br/web/grande-recife
