@@ -15,7 +15,7 @@ prepro = prep.PreProcess()
 for idx, row in tqdm(data.iterrows()):
     if row.velocidade < 5:
         for idx2,stop in traffic_stops_data.iterrows():
-            dist = prepro.distance_in_meters([row.lat,row.lng], [stop.stop_lat,stop.stop_lon])
+            dist = prepro.distance_in_meters([row.lat,row.lng], [stop.Latitude,stop.Longitude])
             if dist < 30 and row.label != 'bus_stop':
                 data.loc[idx,'label'] = 'traffic_light'
 
