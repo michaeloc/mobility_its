@@ -6,7 +6,7 @@ import gmplot.gmplot
 
 stops_data = pd.read_csv('GTFSjaneiro/stops.txt')
 
-data = pd.read_csv('data-100000.csv',delimiter=',', float_precision=None)
+data = pd.read_csv('data-500000.csv',delimiter=',', float_precision=None)
 
 data['label'] = ['in_route' for i in range(data.shape[0])]
 
@@ -20,4 +20,4 @@ for idx, row in tqdm(data.iterrows()):
             if dist < 20:
                 data.loc[idx,'label'] = 'bus_stop'
 
-data.to_csv('data-100000-bus-stop-mapped.csv')
+data.to_csv('data-500000-bus-stop-mapped.csv')
