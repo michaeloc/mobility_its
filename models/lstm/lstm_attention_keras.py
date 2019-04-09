@@ -43,17 +43,18 @@ concat_x = concatenate([embed_w_x,embed_h_x], name='concat_x')
 lstm_b = LSTM(1, input_shape=(seq,features), activation='relu', return_sequences=True, name='lstm_before')(concat_b)
 lstm_a = LSTM(1, input_shape=(seq,features), activation='relu',go_backwards=True, return_sequences=True, name='lstm_after')(concat_a)
 
+## lstm_b ou lstm_a = (batch,16,1)
 
 ##Attention levando em consideração os dados da lstm_b
 attention_b = Flatten()(lstm_b)
-attention_b = Activation('softmax')(attention_b)
+attention_b = Dense(16,activation='softmax')(attention_b)
 attention_b = RepeatVector(16)(attention_b)
 sent_representation_b = Multiply()([lstm_b, attention_b])
 sent_representation_b = Lambda(lambda x: K.sum(x, axis=2))(sent_representation_b)
 
 ##Attention levando em consideração os dados da lstm_a
 attention_a = Flatten()(lstm_a)
-attention_a = Activation('softmax')(attention_a)
+attention_a = Dense(16, activation='softmax')(attention_a)
 attention_a = RepeatVector(16)(attention_a)
 sent_representation_a = Multiply()([lstm_a, attention_a])
 sent_representation_a = Lambda(lambda x: K.sum(x, axis=2))(sent_representation_a)
