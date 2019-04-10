@@ -46,18 +46,18 @@ lstm_a = LSTM(1, input_shape=(seq,features), activation='relu',go_backwards=True
 ## lstm_b ou lstm_a = (batch,16,1)
 
 ##Attention levando em consideração os dados da lstm_b
-attention_b = Flatten()(lstm_b)
+flat_b = Flatten()(lstm_b)
+attention_b = RepeatVector(16)(flat_b)
 attention_b = Dense(16,activation='softmax')(attention_b)
-attention_b = RepeatVector(16)(attention_b)
-sent_representation_b = Multiply()([lstm_b, attention_b])
-sent_representation_b = Lambda(lambda x: K.sum(x, axis=2))(sent_representation_b)
+lstm_att_b = Multiply()([flat_b, attention_b])
+lstm_att_b = Lambda(lambda x: K.sum(x, axis=2))(lstm_att_b)
 
 ##Attention levando em consideração os dados da lstm_a
-attention_a = Flatten()(lstm_a)
+flat_a = Flatten()(lstm_a)
+attention_a = RepeatVector(16)(flat_a)
 attention_a = Dense(16, activation='softmax')(attention_a)
-attention_a = RepeatVector(16)(attention_a)
-sent_representation_a = Multiply()([lstm_a, attention_a])
-sent_representation_a = Lambda(lambda x: K.sum(x, axis=2))(sent_representation_a)
+lstm_att_a = Multiply()([flat_a, attention_a])
+lstm_att_a = Lambda(lambda x: K.sum(x, axis=2))(lstm_att_a)
 
 fl_x = Flatten()(concat_x)
 
